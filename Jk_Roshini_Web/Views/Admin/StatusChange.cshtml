@@ -1,0 +1,71 @@
+﻿@model Jk_Roshni.Models.ViewModel.ComplainListAdmin
+    @{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    }
+
+
+
+
+
+    <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="typcn typcn-cog-outline"></i></div>
+        <div id="theme-settings" class="settings-panel">
+            <i class="settings-close typcn typcn-delete-outline"></i>
+            <p class="settings-heading">SIDEBAR SKINS</p>
+            <div class="sidebar-bg-options" id="sidebar-light-theme">
+                <div class="img-ss rounded-circle bg-light border mr-3"></div>
+                Light
+            </div>
+            <div class="sidebar-bg-options selected" id="sidebar-dark-theme">
+                <div class="img-ss rounded-circle bg-dark border mr-3"></div>
+                Dark
+            </div>
+            <p class="settings-heading mt-2">HEADER SKINS</p>
+            <div class="color-tiles mx-0 px-4">
+                <div class="tiles success"></div>
+                <div class="tiles warning"></div>
+                <div class="tiles danger"></div>
+                <div class="tiles primary"></div>
+                <div class="tiles info"></div>
+                <div class="tiles dark"></div>
+                <div class="tiles default border"></div>
+            </div>
+        </div>
+    </div>
+    <!-- partial -->
+    <!-- partial:../../partials/_sidebar.html -->
+    <!-- partial -->
+    <div class="main-panel">
+        <div class="content-wrapper">
+            <div class="row">
+                <div class="col-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Status</h4>
+                            <p class="card-description">
+                                Status Change
+                            </p>
+                            <form class="forms-sample" asp-action="StatusChnage" asp-controller="Admin">
+
+                                <div class="form-group">
+                                    @Html.HiddenFor(x=>x.Id)
+                                    <label for="exampleSelectGender">Status</label>
+                                    <select class="form-control" id="exampleSelectGender" name="Status">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+
+
+                                <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                                <button class="btn btn-light">Cancel</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content-wrapper ends -->
+
+    </div>
+    <!-- main-panel ends -->

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jk_Roshni", "Jk_Roshni\Jk_Roshni.csproj", "{94F1DF8D-F3BA-4BBC-925D-F3D24A13FD0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jk_Roshini_Web", "Jk_Roshini_Web\Jk_Roshini_Web.csproj", "{19D776C7-378D-40F8-B915-77CDD4780A87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94F1DF8D-F3BA-4BBC-925D-F3D24A13FD0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F1DF8D-F3BA-4BBC-925D-F3D24A13FD0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F1DF8D-F3BA-4BBC-925D-F3D24A13FD0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F1DF8D-F3BA-4BBC-925D-F3D24A13FD0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19D776C7-378D-40F8-B915-77CDD4780A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D776C7-378D-40F8-B915-77CDD4780A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D776C7-378D-40F8-B915-77CDD4780A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D776C7-378D-40F8-B915-77CDD4780A87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28DB8EA5-0389-4489-AE67-502A1F40E000}
+	EndGlobalSection
+EndGlobal

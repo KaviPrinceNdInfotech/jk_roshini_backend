@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CelestialUI Admin</title>
+    <!-- base:css -->
+    <link rel="stylesheet" href="~/AdminLib/vendors/typicons.font/font/typicons.css">
+    <link rel="stylesheet" href="~/AdminLib/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="~/AdminLib/css/vertical-layout-light/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="~/AdminLib/images/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+    @*<div class="row" id="proBanner">
+        <div class="col-12">
+            <span class="d-flex align-items-center purchase-popup">
+                <p>Get tons of UI components, Plugins, multiple layouts, 20+ sample pages, and more!</p>
+                <a href="https://www.bootstrapdash.com/product/celestial-admin-template/?utm_source=organic&utm_medium=banner&utm_campaign=free-preview" target="_blank" class="btn download-button purchase-button ml-auto">Upgrade To Pro</a>
+                <i class="typcn typcn-delete-outline" id="bannerClose"></i>
+            </span>
+        </div>
+    </div>*@
+
+    <div class="container-scroller">
+        @await Html.PartialAsync("~/Views/partials/_navbar.cshtml")
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_settings-panel.html -->
+            @await Html.PartialAsync("~/Views/partials/_settings-panel.cshtml")
+            <!-- partial -->
+            <!-- partial:partials/_sidebar.html -->
+            @await Html.PartialAsync("~/Views/partials/_sidebar.cshtml")
+
+            @RenderBody()
+
+            @await Html.PartialAsync("~/Views/partials/_footer.cshtml")
+
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- base:js -->
+    <script src="~/Adminlib/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="~/Adminlib/js/off-canvas.js"></script>
+    <script src="~/Adminlib/js/hoverable-collapse.js"></script>
+    <script src="~/Adminlib/js/template.js"></script>
+    <script src="~/Adminlib/js/settings.js"></script>
+    <script src="~/Adminlib/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- plugin js for this page -->
+    <script src="~/Adminlib/vendors/progressbar.js/progressbar.min.js"></script>
+    <script src="~/Adminlib/vendors/chart.js/Chart.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- Custom js for this page-->
+    <script src="~/Adminlib/js/dashboard.js"></script>
+    <!-- End custom js for this page-->
+
+
+</body>
+</html>
